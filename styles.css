@@ -1,0 +1,81 @@
+body {
+  background-color: aquamarine;
+}
+.container > * {
+  padding: 1rem;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "header header"
+    "offers offers"
+    "offers offers"
+    "main main"
+    "main main"
+    "main main"
+    "main main"
+    "summer winter"
+    "summer winter";
+}
+
+/* navigation */
+.container-nav {
+  padding: 0;
+  grid-area: nav;
+}
+
+.menu li {
+  padding: 1rem;
+}
+
+/* category */
+.category {
+  grid-area: header;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+}
+
+.category > * {
+  padding: 1rem;
+  background-color: rgb(211, 125, 21);
+}
+
+.color-box {
+  min-height: 48px;
+  min-width: 48px;
+  background-color: pink;
+}
+
+/* offers */
+.offers {
+  padding: 0;
+
+  grid-area: offers;
+  background-color: pink;
+}
+.image {
+  height: 20rem;
+  width: 100%;
+  background-color: purple;
+}
+.offers button {
+  background-color: greenyellow;
+  height: 5rem;
+  width: 3rem;
+}
+/* main */
+main {
+  grid-area: main;
+  background-color: green;
+}
+/* footer */
+.summer {
+  grid-area: summer;
+  background-color: blueviolet;
+}
+.winter {
+  grid-area: winter;
+  background-color: yellow;
+}
