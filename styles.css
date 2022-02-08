@@ -1,21 +1,10 @@
-body {
-  background-color: aquamarine;
-}
-.container > * {
-  padding: 1rem;
-}
 .container {
   display: grid;
   grid-template-areas:
     "nav nav"
     "header header"
     "offers offers"
-    "offers offers"
     "main main"
-    "main main"
-    "main main"
-    "main main"
-    "summer winter"
     "summer winter";
 }
 
@@ -24,58 +13,198 @@ body {
   padding: 0;
   grid-area: nav;
 }
+.logo {
+  height: 75px;
+  width: 75px;
+}
 
+.nav header {
+  padding: var(--gap-medium);
+  background-color: var(--background-color);
+}
+.name {
+  color: var(--primary-color);
+  margin: 0;
+}
+.nav .name {
+  margin-left: 0;
+}
+.search button {
+  background-color: var(--primary-color);
+}
 .menu li {
-  padding: 1rem;
+  padding: var(--gap-small);
+}
+.menu a {
+  padding: var(--gap-small);
+  background-color: var(--primary-color);
 }
 
 /* category */
+
 .category {
   grid-area: header;
-  background-color: blue;
+  /* background-color: var(--secondary-color); */
+  background-color: #006ba6;
   display: flex;
   justify-content: space-around;
 }
 
 .category > * {
-  padding: 1rem;
-  background-color: rgb(211, 125, 21);
+  padding: var(--gap-small);
 }
 
-.color-box {
-  min-height: 48px;
-  min-width: 48px;
-  background-color: pink;
+.category .content a {
+  color: black;
+}
+.category .content:hover {
+  background-color: var(--secondary-color);
+}
+.content .text {
+  text-align: center;
+  width: auto;
+}
+
+.color-box img {
+  height: 4rem;
+  width: 4rem;
 }
 
 /* offers */
 .offers {
   padding: 0;
-
   grid-area: offers;
-  background-color: pink;
 }
-.image {
-  height: 20rem;
+
+.offers {
+  padding: 0;
+  margin: 0;
+  height: 35rem;
+  padding: var(--gap-medium);
+
+  background-color: var(--background-color);
+}
+
+.slider {
   width: 100%;
-  background-color: purple;
+  height: 32.5rem;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.offers button {
-  background-color: greenyellow;
-  height: 5rem;
-  width: 3rem;
+
+.slides {
+  width: 500%;
+  height: 32.5rem;
+  display: flex;
+  position: relative;
 }
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 32.5rem;
+}
+
+/* css for navigation */
+
+.navigation {
+  position: absolute;
+  width: 97vw;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn {
+  border: 2px solid var(--extra-color);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: var(--extra-color);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
 /* main */
 main {
   grid-area: main;
-  background-color: green;
+  padding: 5rem;
 }
+.main-cards {
+  background-color: white;
+  flex-wrap: wrap;
+}
+.card-buy {
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.card-btn {
+  padding: var(--gap-small);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-color);
+}
+
 /* footer */
 .summer {
   grid-area: summer;
-  background-color: blueviolet;
 }
 .winter {
   grid-area: winter;
-  background-color: yellow;
+}
+
+.summer,
+.winter {
+  background-color: var(--secondary-color);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* media query */
+@media (max-width: 816px) {
+  .container {
+    grid-template-areas:
+      "nav "
+      "header "
+      "offers "
+      "main "
+      "summer "
+      "winter";
+  }
 }

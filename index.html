@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/stylesheet/default.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <link
       rel="stylesheet"
       href="https://am-component.netlify.app/stylesheets/components.css"
     />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Mercart Home Page</title>
   </head>
@@ -20,7 +20,12 @@
         <div class="nav">
           <header>
             <div class="title">
-              <p class="name">Title</p>
+              <img
+                class="logo"
+                src="/images/E-Cart-Logo-transparent.png"
+                alt=""
+              />
+              <h2 class="name">Mercart</h2>
             </div>
 
             <div class="search">
@@ -32,60 +37,122 @@
 
             <ul class="menu">
               <li>
-                <a href="#"><i class="fas fa-upload"></i></a>
+                <a class="border-radius-S" href="#"
+                  ><i class="far fa-heart"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="far fa-heart"></i></a>
+                <a class="border-radius-S" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="far fa-bell"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="profile far fa-2x fa-user-circle"></i></a>
+                <!-- <a href="#"><i class="profile far fa-2x fa-user-circle"></i></a> -->
+                <a class="login border-radius-S" href="#">Login</a>
               </li>
             </ul>
           </header>
         </div>
       </div>
       <header class="category">
-        <div class="men">
-          <div class="content-men flex-c">
-            <div class="color-box"></div>
-            <div class="text">Men</div>
+        <!-- --------------- -->
+        <a class="content flex-c" href="#">
+          <div class="color-box">
+            <img src="/images/category/men.jpeg" />
           </div>
-        </div>
-        <div class="men">
-          <div class="content-men flex-c">
-            <div class="color-box"></div>
-            <div class="text">Men</div>
+          <div class="text">Men</div>
+        </a>
+        <a class="content flex-c" href="#">
+          <div class="color-box">
+            <img src="/images/category/women.jpg" />
           </div>
-        </div>
-        <div class="men">
-          <div class="content-men flex-c">
-            <div class="color-box"></div>
-            <div class="text">Men</div>
+          <div class="text">Women</div> </a
+        ><a class="content flex-c" href="#">
+          <div class="color-box">
+            <img src="/images/category/kids.jpg" />
           </div>
-        </div>
-        <div class="men">
-          <div class="content-men flex-c">
-            <div class="color-box"></div>
-            <div class="text">Men</div>
+          <div class="text">Kids</div> </a
+        ><a class="content flex-c" href="#">
+          <div class="color-box">
+            <img src="/images/category/home.jpg" />
           </div>
-        </div>
-        <div class="men">
-          <div class="content-men flex-c">
-            <div class="color-box"></div>
-            <div class="text">Men</div>
+          <div class="text">Home</div> </a
+        ><a class="content flex-c" href="#">
+          <div class="color-box">
+            <img src="/images/category/toy.jpg" />
           </div>
+          <div class="text">Toys</div>
+        </a>
+        <!-- ----------------------- -->
+        <!-- <div class="content flex-c">
+          <div class="color-box">
+            <img src="/images/category/men.jpeg" />
+          </div>
+          <div class="text">Men</div>
         </div>
+        <div class="content flex-c">
+          <div class="color-box">
+            <img src="/images/category/women.jpg" />
+          </div>
+          <div class="text">Women</div>
+        </div>
+        <div class="content flex-c">
+          <div class="color-box">
+            <img src="/images/category/kids.jpg" />
+          </div>
+          <div class="text">Kids</div>
+        </div>
+        <div class="content flex-c">
+          <div class="color-box">
+            <img src="/images/category/home.jpg" />
+          </div>
+          <div class="text">Home</div>
+        </div>
+        <div class="content flex-c">
+          <div class="color-box">
+            <img src="/images/category/toy.jpg" />
+          </div>
+          <div class="text">Toys</div>
+        </div> -->
+        <!-- ----------------------------------------------- -->
       </header>
       <div class="offers flex-r">
-        <button><</button>
-        <div class="image flex-c">
-          <h1>offer Images here</h1>
-          <h3>50%off on all items</h3>
+        <!-- ---------------------------------- -->
+        <!-- image slider starts -->
+        <div class="slider">
+          <div class="slides">
+            <!-- radio button starts -->
+            <input type="radio" name="radio-btn " id="radio1" />
+            <input type="radio" name="radio-btn " id="radio2" />
+            <input type="radio" name="radio-btn " id="radio3" />
+            <input type="radio" name="radio-btn " id="radio4" />
+            <!-- radio button ends -->
+            <!-- slide images starts -->
+            <div class="slide first">
+              <img class="offer-img" src="/images/offers/opening.png" />
+            </div>
+            <div class="slide">
+              <img class="offer-img" src="/images/offers/summer.png" />
+            </div>
+            <div class="slide">
+              <img class="offer-img" src="/images/offers/winter.png" />
+            </div>
+            <div class="slide">
+              <img class="offer-img" src="/images/offers/toy.png" />
+            </div>
+            <!-- slide images ends -->
+            <!-- mannual navigation starts -->
+            <div class="navigation zi-2">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- mannual navigation endss -->
+          </div>
         </div>
-        <button>></button>
+        <!-- image slider ends -->
+        <!-- ---------------------------------- -->
       </div>
       <main>
         <div class="main-cards flex-r">
@@ -94,21 +161,73 @@
             <a class="badge" href="#"><i class="fas fa-heart"></i></a>
             <h2>Marvel Shirt</h2>
             <h4>₹999</h4>
-            <a class="card-btn border-radius-S" href="">Add to cart</a>
+            <div class="card-buy flex-r">
+              <a class="card-btn border-radius-S" href="">Buy Now</a>
+              <a class="card-btn btn-secondary border-radius-S" href=""
+                >Add to cart</a
+              >
+            </div>
           </div>
           <div class="card">
             <img class="item" src="/images/cardImage.jpg" />
             <a class="badge" href="#"><i class="fas fa-heart"></i></a>
             <h2>Marvel Shirt</h2>
             <h4>₹999</h4>
-            <a class="card-btn border-radius-S" href="">Add to cart</a>
+            <div class="card-buy flex-r">
+              <a class="card-btn border-radius-S" href="">Buy Now</a>
+              <a class="card-btn btn-secondary border-radius-S" href=""
+                >Add to cart</a
+              >
+            </div>
           </div>
           <div class="card">
             <img class="item" src="/images/cardImage.jpg" />
             <a class="badge" href="#"><i class="fas fa-heart"></i></a>
             <h2>Marvel Shirt</h2>
             <h4>₹999</h4>
-            <a class="card-btn border-radius-S" href="">Add to cart</a>
+            <div class="card-buy flex-r">
+              <a class="card-btn border-radius-S" href="">Buy Now</a>
+              <a class="card-btn btn-secondary border-radius-S" href=""
+                >Add to cart</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img class="item" src="/images/cardImage.jpg" />
+            <a class="badge" href="#"><i class="fas fa-heart"></i></a>
+            <h2>Marvel Shirt</h2>
+            <h4>₹999</h4>
+            <div class="card-buy flex-r">
+              <a class="card-btn border-radius-S" href="">Buy Now</a>
+              <a class="card-btn btn-secondary border-radius-S" href=""
+                >Add to cart</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img class="item" src="/images/cardImage.jpg" />
+            <a class="badge" href="#"><i class="fas fa-heart"></i></a>
+            <h2>Marvel Shirt</h2>
+            <h4>₹999</h4>
+            <div class="card-buy flex-r">
+              <a class="card-btn border-radius-S" href="">Buy Now</a>
+              <a class="card-btn btn-secondary border-radius-S" href=""
+                >Add to cart</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img class="item" src="/images/cardImage.jpg" />
+            <a class="badge" href="#"><i class="fas fa-heart"></i></a>
+            <h2>Marvel Shirt</h2>
+            <h4>₹999</h4>
+
+            <div class="card-buy flex-r">
+              <a class="card-btn border-radius-S" href="">Buy Now</a>
+              <a class="card-btn btn-secondary border-radius-S" href=""
+                >Add to cart</a
+              >
+            </div>
           </div>
         </div>
       </main>
@@ -116,15 +235,21 @@
         <div class="card horizontal">
           <div class="horizontal-container">
             <img class="item" src="/images/cardImage.jpg" />
+
             <div class="text-container">
-              <h2>Summer Collection</h2>
-              <h4>₹999</h4>
+              <h5>New Arriavles</h5>
+
+              <div class="main-text">
+                <h2>Summer Collection</h2>
+                <h5>
+                  Check out our best summer collection to keep up with the
+                  trend.
+                </h5>
+              </div>
             </div>
           </div>
-          <a class="badge" href="#">
-            <i class="fas fa-heart fa-xs"></i>
-          </a>
-          <a class="card-btn border-radius-S" href="#">Add to cart</a>
+
+          <a class="card-btn border-radius-S" href="#">Explore</a>
         </div>
       </div>
       <div class="winter">
@@ -132,16 +257,21 @@
           <div class="horizontal-container">
             <img class="item" src="/images/cardImage.jpg" />
             <div class="text-container">
-              <h2>Winter Collection</h2>
-              <h4>₹999</h4>
+              <h5>New Arriavles</h5>
+
+              <div class="main-text">
+                <h2>Winter Collection</h2>
+                <h5>
+                  Check out our best winter collection to stay warm in style.
+                </h5>
+              </div>
             </div>
           </div>
-          <a class="badge" href="#">
-            <i class="fas fa-heart fa-xs"></i>
-          </a>
-          <a class="card-btn border-radius-S" href="#">Add to cart</a>
+
+          <a class="card-btn border-radius-S" href="#">Explore</a>
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
