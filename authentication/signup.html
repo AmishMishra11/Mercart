@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/stylesheet/default.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://am-component.netlify.app/stylesheets/components.css"
+    />
+    <link rel="stylesheet" href="signup.css" />
+
+    <title>Mercart Signup</title>
+  </head>
+  <body>
+    <div class="container-nav">
+      <nav class="nav">
+        <header>
+          <div class="title">
+            <img
+              class="logo"
+              src="/images/E-Cart-Logo-transparent.png"
+              alt=""
+            />
+            <h2 class="name">Mercart</h2>
+          </div>
+
+          <div class="search">
+            <input type="text" placeholder="waht are you looking for" />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <ul class="menu">
+            <li>
+              <a class="border-radius-S" href="#"
+                ><i class="far fa-heart"></i
+              ></a>
+            </li>
+            <li>
+              <a class="border-radius-S" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+            <li>
+              <a class="login border-radius-S" href="#">Login</a>
+            </li>
+          </ul>
+        </header>
+      </nav>
+    </div>
+
+    <div class="container-login flex-c">
+      <h1>Signup</h1>
+
+      <div class="email">
+        <label for="email-id"> Email address</label>
+        <input
+          class="border-radius-S"
+          type="text"
+          id="email-id"
+          placeholder="name@company.com"
+        />
+      </div>
+
+      <div class="password">
+        <label for="password-id"> Password</label>
+        <input
+          class="border-radius-S"
+          type="password"
+          id="password-id"
+          placeholder="**********"
+        />
+      </div>
+
+      <div class="container-extra">
+        <div class="container-reminder flex-r">
+          <input type="checkbox" name="" id="remember" />
+          <label for="remember">I accept all Terma & Conditions</label>
+        </div>
+      </div>
+
+      <a class="login-btn border-radius-S" href="/index.html"
+        >Create New Account</a
+      >
+      <a
+        class="login-btn btn-secondary border-radius-S"
+        href="/authentication/login.html"
+        >Already have an account
+      </a>
+    </div>
+  </body>
+</html>
