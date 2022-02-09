@@ -1,0 +1,70 @@
+.container-nav {
+  padding: 0;
+  grid-area: nav;
+}
+.logo {
+  height: 75px;
+  width: 75px;
+}
+
+.nav header {
+  padding: var(--gap-medium);
+  background-color: var(--background-color);
+}
+.nav .brand-link:hover {
+  background-color: var(--background-color);
+  opacity: 163%;
+}
+
+.name {
+  color: var(--primary-color);
+  margin: 0;
+}
+.nav .name {
+  margin-left: 0;
+}
+.search button {
+  background-color: var(--primary-color);
+}
+.menu li {
+  padding: var(--gap-small);
+}
+.menu a {
+  padding: var(--gap-small);
+  background-color: var(--primary-color);
+}
+
+.wish {
+  margin: var(--gap-medium);
+  text-align: center;
+}
+
+/* main content */
+main {
+  padding: var(--gap-medium);
+}
+.main-cards {
+  background-color: white;
+  flex-wrap: wrap;
+}
+.card-buy {
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.card-btn {
+  padding: var(--gap-small);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* active */
+.active {
+  color: var(--primary-color);
+}
