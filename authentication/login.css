@@ -1,0 +1,114 @@
+.container-nav {
+  padding: 0;
+  grid-area: nav;
+}
+.logo {
+  height: 75px;
+  width: 75px;
+}
+
+.nav header {
+  padding: var(--gap-medium);
+  background-color: var(--background-color);
+}
+.name {
+  color: var(--primary-color);
+  margin: 0;
+}
+.nav .name {
+  margin-left: 0;
+}
+.search button {
+  background-color: var(--primary-color);
+}
+.menu li {
+  padding: var(--gap-small);
+}
+.menu a {
+  padding: var(--gap-small);
+  background-color: var(--primary-color);
+}
+
+/* login */
+
+.container-login {
+  background-color: var(--secondary-color);
+  margin: auto;
+  width: 40%;
+  margin-top: 5rem;
+  padding: var(--gap-large);
+}
+
+.email,
+.password {
+  width: 100%;
+  margin: var(--gap-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.email input,
+.password input {
+  width: 100%;
+
+  padding: var(--gap-small);
+}
+
+.container-extra {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-reminder input {
+  border-radius: 5px;
+  margin-right: 5px;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.forgot a {
+  color: var(--primary-color);
+}
+
+.login-btn {
+  width: 100%;
+  margin: var(--gap-small);
+  padding: var(--gap-small);
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.btn-secondary {
+  width: 100%;
+  background-color: var(--extra-color);
+}
+
+@media (max-width: 700px) {
+  .logo {
+    height: 45px;
+    width: 45px;
+  }
+
+  .title h2 {
+    font-size: 1rem;
+  }
+
+  .nav header {
+    padding: var(--gap-small);
+  }
+
+  .menu li {
+    padding: 3px;
+  }
+
+  .container-login {
+    width: 80%;
+  }
+
+  html {
+    font-size: 75%;
+  }
+}
