@@ -83,6 +83,12 @@ span {
 .quantity {
   justify-content: flex-start;
 }
+/* to remove arrows form input  */
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .quantity p {
   font-size: 1.2rem;
