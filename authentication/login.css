@@ -6,6 +6,10 @@
   height: 75px;
   width: 75px;
 }
+.nav .brand-link:hover {
+  background-color: var(--background-color);
+  opacity: 163%;
+}
 
 .nav header {
   padding: var(--gap-medium);
