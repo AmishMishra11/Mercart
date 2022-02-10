@@ -1,0 +1,162 @@
+.container-nav {
+  padding: 0;
+  grid-area: nav;
+}
+.logo {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.nav header {
+  padding: var(--gap-medium);
+  background-color: var(--background-color);
+}
+.nav .brand-link:hover {
+  background-color: var(--background-color);
+  opacity: 163%;
+}
+
+.name {
+  color: var(--primary-color);
+  margin: 0;
+}
+.nav .name {
+  margin-left: 0;
+}
+.search button {
+  background-color: var(--primary-color);
+}
+.menu li {
+  padding: var(--gap-small);
+}
+.menu a {
+  padding: var(--gap-small);
+  background-color: var(--primary-color);
+}
+
+.cart-text {
+  margin: var(--gap-medium);
+  text-align: center;
+}
+
+.container-cart {
+  flex-wrap: wrap;
+}
+/* item */
+
+.card {
+  height: 23rem;
+  width: 36rem;
+}
+
+.horizontal {
+  justify-content: center;
+  align-items: stretch;
+}
+
+.horizontal-container {
+  justify-content: space-between;
+}
+
+.horizontal .item {
+  height: 20rem;
+  width: 18rem;
+  background-color: grey;
+}
+
+.text-container {
+  align-items: stretch;
+  justify-content: space-around;
+  padding: var(--gap-medium);
+}
+
+span {
+  font-size: 1rem;
+
+  text-decoration: line-through;
+}
+
+.offer {
+  color: var(--secondary-color);
+}
+
+.quantity {
+  justify-content: flex-start;
+}
+/* to remove arrows form input  */
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity p {
+  font-size: 1.2rem;
+}
+
+.quantity button {
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 2px 4px;
+}
+.quantity input {
+  width: 2rem;
+  margin: 0 0.5rem;
+  padding: 5px;
+  border-width: 1px;
+}
+
+.items-cart button {
+  font-size: 1rem;
+}
+
+.button .third {
+  background-color: white;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+/* order */
+.order {
+  border: 2px solid var(--primary-color);
+  padding: var(--gap-medium);
+  align-items: stretch;
+  justify-content: space-between;
+  height: 25rem;
+  width: 20rem;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.button button {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 610px) {
+  .search input {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  nav .title .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  nav .title .brand-link {
+    font-size: 1rem;
+  }
+  .card {
+    height: 18rem;
+    width: 31rem;
+  }
+
+  .horizontal .item {
+    height: 15rem;
+    width: 13rem;
+    background-color: grey;
+  }
+}
