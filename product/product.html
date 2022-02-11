@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/stylesheet/default.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://am-component.netlify.app/stylesheets/components.css"
+    />
+    <link rel="stylesheet" href="product.css" />
+
+    <title>Mercart Products</title>
+  </head>
+  <body>
+    <div class="container-nav zi-5">
+      <nav class="nav">
+        <header>
+          <div class="title">
+            <img
+              class="logo"
+              src="/images/E-Cart-Logo-transparent.png"
+              alt=""
+            />
+            <a class="brand-link" href="/index.html">
+              <h2 class="name">Mercart</h2>
+            </a>
+          </div>
+
+          <div class="search">
+            <input type="text" placeholder="What are you looking for" />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <ul class="menu">
+            <li>
+              <a class="border-radius-S" href="/wishlist/wishlist.html"
+                ><i class="far fa-heart"></i
+              ></a>
+            </li>
+            <li>
+              <a class="border-radius-S" href="/cart-management/cart.html"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+            <li>
+              <a class="login border-radius-S" href="/authentication/login.html"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </header>
+      </nav>
+    </div>
+
+    <div class="container-main">
+      <aside class="filters flex-c">
+        <div class="filter flex-r">
+          <h3>Filters</h3>
+
+          <a href="#">Clear</a>
+        </div>
+
+        <div class="price">
+          <h3>Price</h3>
+          <div class="container-range">
+            <div class="range flex-r">
+              <p>50</p>
+              <p>100</p>
+              <p>150</p>
+            </div>
+
+            <div class="slider">
+              <input
+                type="range"
+                class="slider"
+                min="50"
+                max="150"
+                value="100"
+                id="range-slider"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Category</h3>
+
+          <div class="checkboxes flex-c">
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Men</span>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Women </span>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Kids </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="rating">
+          <h3>Rating</h3>
+
+          <div class="radio-btns flex-c">
+            <label class="radio-btn">
+              <input type="radio" name="4" />
+              <span> 4 Stars and above</span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="3" />
+              <span>3 Stars and above </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="2" />
+              <span>2 Stars and above </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="1" />
+              <span>1 Stars and above </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="sort">
+          <h3>Sort by</h3>
+
+          <div class="radio-btns flex-c">
+            <label class="radio-btn">
+              <input type="radio" name="High" />
+              <span>Price - High to Low</span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="High" />
+              <span>Price - Low to High </span>
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- products starts here -->
+
+      <main class="main-cards flex-r">
+        <div class="card">
+          <img class="item" src="/images/cardImage.jpg" />
+          <a class="badge" href="#"><i class="active fas fa-heart"></i></a>
+          <h2>Marvel Shirt</h2>
+          <h4>₹999</h4>
+          <div class="card-buy flex-r">
+            <a class="card-btn border-radius-S" href="">Buy Now</a>
+            <a class="card-btn btn-secondary border-radius-S" href=""
+              >Add to cart</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img class="item" src="/images/cardImage.jpg" />
+          <a class="badge" href="#"><i class="active fas fa-heart"></i></a>
+          <h2>Marvel Shirt</h2>
+          <h4>₹999</h4>
+          <div class="card-buy flex-r">
+            <a class="card-btn border-radius-S" href="">Buy Now</a>
+            <a class="card-btn btn-secondary border-radius-S" href=""
+              >Add to cart</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img class="item" src="/images/cardImage.jpg" />
+          <a class="badge" href="#"><i class="active fas fa-heart"></i></a>
+          <h2>Marvel Shirt</h2>
+          <h4>₹999</h4>
+          <div class="card-buy flex-r">
+            <a class="card-btn border-radius-S" href="">Buy Now</a>
+            <a class="card-btn btn-secondary border-radius-S" href=""
+              >Add to cart</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img class="item" src="/images/cardImage.jpg" />
+          <a class="badge" href="#"><i class="active fas fa-heart"></i></a>
+          <h2>Marvel Shirt</h2>
+          <h4>₹999</h4>
+          <div class="card-buy flex-r">
+            <a class="card-btn border-radius-S" href="">Buy Now</a>
+            <a class="card-btn btn-secondary border-radius-S" href=""
+              >Add to cart</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img class="item" src="/images/cardImage.jpg" />
+          <a class="badge" href="#"><i class="active fas fa-heart"></i></a>
+          <h2>Marvel Shirt</h2>
+          <h4>₹999</h4>
+          <div class="card-buy flex-r">
+            <a class="card-btn border-radius-S" href="">Buy Now</a>
+            <a class="card-btn btn-secondary border-radius-S" href=""
+              >Add to cart</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img class="item" src="/images/cardImage.jpg" />
+          <a class="badge" href="#"><i class="active fas fa-heart"></i></a>
+          <h2>Marvel Shirt</h2>
+          <h4>₹999</h4>
+
+          <div class="card-buy flex-r">
+            <a class="card-btn border-radius-S" href="">Buy Now</a>
+            <a class="card-btn btn-secondary border-radius-S" href=""
+              >Add to cart</a
+            >
+          </div>
+        </div>
+      </main>
+      <!-- products endss here -->
+    </div>
+  </body>
+</html>
